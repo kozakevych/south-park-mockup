@@ -1,0 +1,71 @@
+const gulp = require('gulp');
+const pug = require('gulp-pug');
+const sass = require('gulp-sass');
+const del = require('del');
+const browserSync = require('browser-sync');
+
+const plumber = require('gulp-plumber');
+const notify = require('gulp-notify');
+const imagemin = require('gulp-imagemin');
+
+const wiredep = require('wiredep').stream;
+
+//const liveRel = require('gulp-livereload');
+
+const paths = {
+    src: process.cwd() + '/src/**/*.*',
+    html: process.cwd() + '/src/templates/pages/index.pug',
+    css: process.cwd() + '/src/styles/main.sass',
+    images: process.cwd() + '/src/images/*.*',
+    dist: process.cwd() + '/dist/'
+};
+
+
+gulp.task('html', function() {
+    gulp.src(paths.html)
+        .pipe(plumber({
+            errorHandler: notify.onError("Error: <%= error.message %>")
+        }))
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(gulp.dest(paths.dist))
+        //.pipe(browserSync.stream());
+});
+
+gulp.task('css', function() {
+    gulp.src(paths.css)
+        .pipe(plumber({
+            errorHandler: notify.onError("Error: <%= error.message %>")
+        }))
+        .pipe(sass({
+            outputStyle: 'expanded'
+        }).on('error', sass.logError))
+        .pipe(gulp.dest(paths.dist + 'styles/'))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('images', function() {
+    gulp.src(paths.assets)
+        .pipe(imagemin())
+        .pipe(gulp.dest(paths.dist + 'images/'));
+});
+
+gulp.task('clean', function() {
+    del([paths.dist + '*']);
+});
+
+
+
+gulp.task('serve', ['html', 'css'], function() {
+
+    browserSync.init({
+        server: "dist/"
+    });
+
+    gulp.watch("src/templates/*.pug", ['html']);
+    gulp.watch("src/styles/**/*.*", ['css']);
+    gulp.watch("./dist/**/*.*").on('change', browserSync.reload);
+});
+
+gulp.task('default', ['serve']);
