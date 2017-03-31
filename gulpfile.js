@@ -54,7 +54,7 @@ gulp.task('clean', function() {
 gulp.task('build', ['html', 'css']);
 
 
-gulp.task('serve', ['html', 'css', 'images'], function() {
+gulp.task('serve', ['html', 'css'], function() {
 
     browserSync.init({
         server: "dist/"
