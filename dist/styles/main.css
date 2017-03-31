@@ -207,6 +207,35 @@ footer .bottom-foot {
   border-top: 1px solid #ed1a3b;
 }
 
+footer .bottom-foot .social {
+  width: 15%;
+  margin: 20px auto;
+  margin-bottom: 10px;
+}
+
+footer .bottom-foot .social img {
+  color: white;
+  width: 20px;
+  margin: 0 8px;
+}
+
+footer .bottom-foot .social img:first-child {
+  margin-left: 0px;
+}
+
+footer .bottom-foot .social img:nth-child(3) {
+  position: relative;
+  width: 30px;
+  margin-bottom: -5px;
+}
+
+footer .bottom-foot .social img:nth-child(4) {
+  position: relative;
+  width: 30px;
+  margin-left: 0px;
+  margin-bottom: -5px;
+}
+
 .sub-nav ul {
   display: inline;
 }
@@ -409,7 +438,6 @@ div.content .catalogue .season .episodes .episode h6 {
 }
 
 .blog-content {
-  height: 1000px;
   background: #ffffff;
 }
 
@@ -424,12 +452,13 @@ div.content .catalogue .season .episodes .episode h6 {
 }
 
 .blog-content .side-panel ul li {
-  padding-left: 10px;
   width: 270px;
   border-top: 1px solid #cacaca;
 }
 
 .blog-content .side-panel ul li a {
+  padding-left: 10px;
+  display: block;
   font-size: 14px;
   line-height: 50px;
 }
@@ -447,4 +476,66 @@ div.content .catalogue .season .episodes .episode h6 {
   position: relative;
   float: right;
   margin: 17px 10px;
+}
+
+.blog-content .topics {
+  padding-left: 35px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.blog-content .topics .topic {
+  width: 586px;
+  box-shadow: 0px 0px 30px #cacaca;
+  margin-bottom: 30px;
+}
+
+.blog-content .topics .topic img {
+  height: 329px;
+  width: 586px;
+}
+
+.blog-content .topics .topic .topic-des {
+  padding: 20px;
+}
+
+.blog-content .topics .topic .topic-des p {
+  margin: 10px auto;
+  font-size: 13px;
+}
+
+.blog-content .topics .topic .topic-des button {
+  display: inline-block;
+  margin: 5px 0px;
+  background: linear-gradient(to top, #2f2d2d, #676565);
+  color: #fdc314;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 180px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  box-shadow: 0px 1px 3px #2f2d2d;
+  line-height: 40px;
+}
+
+.blog-content .view-more {
+  padding: 0px 0px 30px 230px;
+}
+
+.blog-content .view-more button {
+  display: inline-block;
+  margin: 5px 0px;
+  background: linear-gradient(to top, #2f2d2d, #676565);
+  color: #fdc314;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 180px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  box-shadow: 0px 1px 3px #2f2d2d;
+  line-height: 40px;
 }

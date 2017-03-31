@@ -1,7 +1,7 @@
 extends ../layout.pug
 
 block vars
-	- var pageName = "The Official South Park Blog"
+	- var pageName = "The Official South Park Blog Page"
 
 block content
 	.blog-content
@@ -16,3 +16,18 @@ block content
 				li #[a(href="#") Fans]
 				li #[a(href="#") Behind the Scenes #[img(src="images/arrow.png")]]
 				li #[a(href="#") Interviews]
+
+
+		.topics
+			- var i = 1
+			while i <= 3
+				div.topic
+					img(src="images/lepricon.jpg")
+					div.topic-des
+						h2 Happy Saint Patrick’s Day!
+						p Wear some green and pour yourself a double shot of these boozy South Park moments.
+						button Read
+				- i++
+
+		.view-more
+			button View more

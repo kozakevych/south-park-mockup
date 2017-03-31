@@ -1,5 +1,4 @@
 .blog-content
-	height: 1000px
 	background: $white
 
 	.side-panel
@@ -13,10 +12,11 @@
 
 		ul
 			li
-				padding-left: 10px
 				width: 270px
 				border-top: 1px solid $randomTop
 				a
+					padding-left: 10px
+					display: block
 					font-size: 14px
 					line-height: 50px
 				a:visited
@@ -29,3 +29,32 @@
 						position: relative
 						float: right
 						margin: 17px 10px
+
+	.topics
+		padding-left: 35px
+		padding-top: 50px
+		padding-bottom: 30px
+
+		.topic
+			width: 586px
+			box-shadow: 0px 0px 30px $randomTop
+			margin-bottom: 30px
+
+			img
+				height: 329px
+				width: 586px
+
+			.topic-des
+				padding: 20px
+
+				p
+					margin: 10px auto
+					font-size: 13px
+
+				button
+					+buttonStyle
+
+	.view-more
+		padding: 0px 0px 30px 230px
+		button
+			+buttonStyle
