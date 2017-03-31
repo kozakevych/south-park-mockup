@@ -4,4 +4,4 @@ South Park Mockup
 
 Usage:
 
-- npm install => gulp serve
+- npm install => gulp images => gulp serve (needed gulp to be installed globally)

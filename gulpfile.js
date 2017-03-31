@@ -23,7 +23,7 @@ gulp.task('html', function() {
             errorHandler: notify.onError("Error: <%= error.message %>")
         }))
         .pipe(pug({
-            pretty: true
+            pretty: false
         }))
         .pipe(gulp.dest(paths.dist))
         //.pipe(browserSync.stream());
