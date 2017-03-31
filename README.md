@@ -1,4 +1,4 @@
-South Park Mockup
+South Park Mockup (not responsive:)
 
 - practice with Pug, Sass, Gulp
 
