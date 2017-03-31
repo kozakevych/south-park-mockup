@@ -14,7 +14,7 @@ const wiredep = require('wiredep').stream;
 
 const paths = {
     src: process.cwd() + '/src/**/*.*',
-    html: process.cwd() + '/src/templates/pages/index.pug',
+    html: process.cwd() + '/src/templates/pages/blog.pug',
     css: process.cwd() + '/src/styles/main.sass',
     images: process.cwd() + '/src/images/*.*',
     dist: process.cwd() + '/dist/'

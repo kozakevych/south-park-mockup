@@ -1,7 +1,18 @@
-extends ../footer.pug
+extends ../layout.pug
 
 block vars
 	- var pageName = "The Official South Park Blog"
 
 block content
-	p i'm content - blog-pag
+	.blog-content
+		.side-panel
+			h3 Categories
+			ul
+				li #[a(href="#") News #[img(src="images/arrow.png")]]
+				li #[a(href="#") Quotes #[img(src="images/arrow.png")]]
+				li #[a(href="#") Memes #[img(src="images/arrow.png")]]
+				li #[a(href="#") Episodes #[img(src="images/arrow.png")]]
+				li #[a(href="#") FAQ #[img(src="images/arrow.png")]]
+				li #[a(href="#") Fans]
+				li #[a(href="#") Behind the Scenes #[img(src="images/arrow.png")]]
+				li #[a(href="#") Interviews]

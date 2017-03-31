@@ -39,9 +39,24 @@ block content
 			.sort-by-season
 
 				h3 Sort by season
+
+				p
+					span Featured
 					- var i =1;
-					h5 Featured
-						while i <= 20
-							span= i++
+					while i <= 20
+						span= i++
 
 			.season
+
+				h3 Season 20 #[span (10 episodes)]
+
+				.episodes
+
+					- var i = 1;
+					while i <= 10
+						div.episode
+							img(src="images/member.jpg")
+							div.descr
+								h5 Name
+								h6 Views
+						-i++

@@ -18,7 +18,6 @@ body {
 }
 
 div.container {
-  border: 1px solid #000000;
   width: 1000px;
   margin: 0 auto;
 }
@@ -57,10 +56,6 @@ div.container {
 
 .top-header nav > a li:first-child, .top-header ul li:first-child {
   border-left: 1px solid #222222;
-}
-
-.top-header nav > a li:first-child a, .top-header ul li:first-child a {
-  border-bottom: 3px solid #fdc314;
 }
 
 .top-header nav > a li, .top-header ul li {
@@ -353,7 +348,7 @@ div.content .watch-episode .about-episode .buttons button:nth-child(2) span {
 }
 
 div.content .catalogue {
-  height: 300px;
+  height: 600px;
   background: #ffffff;
 }
 
@@ -364,4 +359,92 @@ div.content .catalogue .random-episode {
 
 div.content .catalogue .random-episode img.random {
   border-radius: 10px;
+}
+
+div.content .catalogue .sort-by-season {
+  padding: 0px 50px;
+}
+
+div.content .catalogue .sort-by-season h3, div.content .catalogue .sort-by-season span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+div.content .catalogue .sort-by-season p {
+  margin: 20px auto;
+}
+
+div.content .catalogue .sort-by-season span {
+  margin: 13px;
+  font-size: 13px;
+}
+
+div.content .catalogue .season {
+  margin-top: 30px;
+  padding: 0px 50px;
+}
+
+div.content .catalogue .season h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+div.content .catalogue .season h3 span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+div.content .catalogue .season .episodes .episode {
+  border: 1px solid #cacaca;
+  margin: 20px 10px 20px 0px;
+  float: left;
+}
+
+div.content .catalogue .season .episodes .episode h5, div.content .catalogue .season .episodes .episode h6 {
+  padding: 2px 4px;
+}
+
+div.content .catalogue .season .episodes .episode h6 {
+  color: #494949;
+}
+
+.blog-content {
+  height: 1000px;
+  background: #ffffff;
+}
+
+.blog-content .side-panel {
+  margin-top: 50px;
+  float: right;
+  padding-right: 60px;
+}
+
+.blog-content .side-panel h3 {
+  margin-bottom: 20px;
+}
+
+.blog-content .side-panel ul li {
+  padding-left: 10px;
+  width: 270px;
+  border-top: 1px solid #cacaca;
+}
+
+.blog-content .side-panel ul li a {
+  font-size: 14px;
+  line-height: 50px;
+}
+
+.blog-content .side-panel ul li a:visited {
+  color: #000000;
+}
+
+.blog-content .side-panel ul li a:link {
+  color: #000000;
+}
+
+.blog-content .side-panel ul li a:link img {
+  height: 12px;
+  position: relative;
+  float: right;
+  margin: 17px 10px;
 }
