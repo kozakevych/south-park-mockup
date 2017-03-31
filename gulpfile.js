@@ -8,10 +8,6 @@ const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const imagemin = require('gulp-imagemin');
 
-const wiredep = require('wiredep').stream;
-
-//const liveRel = require('gulp-livereload');
-
 const paths = {
     src: process.cwd() + '/src/**/*.*',
     html: process.cwd() + '/src/templates/pages/*.pug',
@@ -58,7 +54,7 @@ gulp.task('clean', function() {
 gulp.task('build', ['html', 'css']);
 
 
-gulp.task('serve', ['html', 'css'], function() {
+gulp.task('serve', ['html', 'css', 'images'], function() {
 
     browserSync.init({
         server: "dist/"
