@@ -4,6 +4,8 @@ const sass = require('gulp-sass');
 const del = require('del');
 const browserSync = require('browser-sync');
 
+const rename = require('gulp-rename');
+const cssmin = require('gulp-cssmin');
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const imagemin = require('gulp-imagemin');
@@ -37,6 +39,8 @@ gulp.task('css', function() {
         .pipe(sass({
             outputStyle: 'expanded'
         }).on('error', sass.logError))
+        .pipe(cssmin())
+        .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(paths.dist + 'styles/'))
         .pipe(browserSync.stream());
 });
