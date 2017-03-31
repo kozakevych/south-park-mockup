@@ -1,8 +1,7 @@
 div.content
-
 	.watch-episode
 
-		height: 270px
+		min-height: 270px
 		background: $contentBackground
 		padding: 40px 70px
 
@@ -55,8 +54,9 @@ div.content
 
 	.catalogue
 
-		height: 600px
+		min-height: 600px
 		background: $white
+		padding-bottom: 50px
 
 		.random-episode
 			background: linear-gradient(to top, $randomBottom, $randomTop)
@@ -73,7 +73,7 @@ div.content
 			p
 				margin: 20px auto
 			span
-				margin: 13px
+				margin: 12px
 				font-size: 13px
 
 			span:last-child
@@ -86,7 +86,6 @@ div.content
 
 
 		.season
-
 			margin-top: 30px
 			padding: 0px 50px
 
@@ -100,10 +99,11 @@ div.content
 
 			.episodes
 
+				min-height: 300px
 				.episode
 
 					border: 1px solid $randomTop
-					margin: 20px 10px 20px 0px
+					margin: 20px 8px 20px 0px
 					float: left
 
 					h5,h6
