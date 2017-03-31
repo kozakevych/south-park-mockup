@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style-type: none;
+}
+
+body {
+  background: url("../images/pattern-black.png");
+  padding-top: 100px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+div.container {
+  border: 1px solid #000000;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.top-header {
+  padding-top: 28px;
+  padding-bottom: 0px;
+  height: 65px;
+  background: #000000;
+}
+
+.top-header ul li {
+  font-size: 14px;
+}
+
+.top-header nav > a {
+  padding-left: 30px;
+  padding-right: 10px;
+  font-size: 30px;
+}
+
+.top-header nav > a .logo {
+  margin-bottom: -4px;
+  margin-right: 3px;
+}
+
+.top-header span {
+  font-weight: bold;
+}
+
+.top-header nav > a, .top-header ul {
+  color: #ffffff;
+  text-transform: uppercase;
+  display: inline;
+}
+
+.top-header nav > a li:first-child, .top-header ul li:first-child {
+  border-left: 1px solid #222222;
+}
+
+.top-header nav > a li:first-child a, .top-header ul li:first-child a {
+  border-bottom: 3px solid #fdc314;
+}
+
+.top-header nav > a li, .top-header ul li {
+  padding: 10px 10px;
+  border-right: 1px solid #222222;
+}
+
+.top-header nav > a li a, .top-header ul li a {
+  font-weight: bold;
+  padding: 4px 0px;
+}
+
+.top-header nav > a li a:hover, .top-header ul li a:hover {
+  border-bottom: 3px solid #fdc314;
+}
+
+.top-header nav {
+  padding-top: 0px;
+  height: 30px;
+}
+
+.top-header nav > span {
+  display: inline;
+  padding-left: 40px;
+}
+
+.top-header nav > span img {
+  padding: 0px 7px;
+  padding-top: 0px;
+  margin-bottom: -5px;
+  height: 30px;
+}
+
+.top-header nav > span > span {
+  text-align: right;
+  display: inline-block;
+  height: 30px;
+  color: #6a6a6a;
+  font-size: 10px;
+}
+
+.top-header nav > span > span a.sign-in {
+  color: #fdc314;
+  font-size: 10px;
+}
+
+.top-header nav > span img.buddy {
+  height: 35px;
+}
+
+.top-header ul {
+  display: inline;
+}
+
+.top-header ul li {
+  display: inline;
+  font-size: 13px;
+}
+
+.top-header ul li a {
+  color: #ffffff;
+}
+
+footer {
+  background: #000000;
+}
+
+footer div.column-wrapper {
+  padding: 100px 0px 0px 60px;
+}
+
+footer div.column-wrapper h4 {
+  color: white;
+  font-weight: bold;
+}
+
+footer div.column-wrapper div.first-column,
+footer div.column-wrapper div.second-column,
+footer div.column-wrapper div.third-column {
+  width: 25%;
+  height: 550px;
+  float: left;
+  padding: 0px 35px;
+}
+
+footer div.column-wrapper div.first-column a,
+footer div.column-wrapper div.second-column a,
+footer div.column-wrapper div.third-column a {
+  color: #ffffff;
+}
+
+footer div.column-wrapper div.first-column > a {
+  text-transform: uppercase;
+}
+
+footer div.column-wrapper div.first-column > a .logo {
+  height: 20px;
+  margin-bottom: -3px;
+  margin-right: 5px;
+}
+
+footer div.column-wrapper div.first-column > a span {
+  font-weight: bold;
+}
+
+footer div.column-wrapper div.first-column .rights-container, footer div.column-wrapper div.first-column .credits {
+  padding: 20px;
+}
+
+footer div.column-wrapper div.first-column .rights-container p, footer div.column-wrapper div.first-column .credits p {
+  color: #ffffff;
+  width: 140px;
+  font-size: 10px;
+  margin: 20px 0px;
+}
+
+footer div.column-wrapper div.first-column .credits {
+  color: #ffffff;
+}
+
+footer div.column-wrapper div.first-column .credits a {
+  display: block;
+  font-size: 8px;
+  margin: 8px 0px;
+}
+
+footer div.column-wrapper div.second-column a, footer div.column-wrapper div.third-column a {
+  font-size: 10px;
+  display: block;
+  margin: 10px 0px;
+}
+
+footer div.column-wrapper div.second-column .video {
+  height: 180px;
+}
+
+footer div.column-wrapper div.third-column .blog {
+  height: 180px;
+}
+
+footer div.column-wrapper div.third-column .general {
+  height: 270px;
+}
+
+footer .bottom-foot {
+  clear: both;
+  margin-top: 20px;
+  height: 100px;
+  border-top: 1px solid #ed1a3b;
+}
+
+.sub-nav ul {
+  display: inline;
+}
+
+.sub-nav ul li {
+  display: inline;
+}
+
+.sub-nav ul li a {
+  color: #ffffff;
+}
+
+.sub-nav {
+  height: 50px;
+  background: #6a6a6a;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sub-nav li {
+  margin-right: 20px;
+}
+
+.sub-nav li a {
+  padding: 4px 0px;
+  font-size: 13px;
+}
+
+.sub-nav li a:hover {
+  border-bottom: 3px solid #fdc314;
+}
+
+.sub-nav li:first-child a {
+  border-bottom: 3px solid #fdc314;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  position: absolute;
+  margin-top: -10px;
+  margin-left: 464px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #6a6a6a;
+}
+
+div.content .watch-episode {
+  height: 270px;
+  background: #494949;
+  padding: 40px 70px;
+}
+
+div.content .watch-episode img.episode {
+  float: left;
+  width: 422px;
+  margin-right: 40px;
+}
+
+div.content .watch-episode .about-episode {
+  color: #ffffff;
+}
+
+div.content .watch-episode .about-episode .social {
+  margin-bottom: 10px;
+}
+
+div.content .watch-episode .about-episode .social img {
+  color: white;
+  width: 20px;
+  margin: 0 8px;
+}
+
+div.content .watch-episode .about-episode .social img:first-child {
+  margin-left: 0px;
+}
+
+div.content .watch-episode .about-episode .social img:nth-child(3) {
+  position: relative;
+  width: 30px;
+  margin-bottom: -5px;
+}
+
+div.content .watch-episode .about-episode .social img:nth-child(4) {
+  position: relative;
+  width: 30px;
+  margin-left: 0px;
+  margin-bottom: -5px;
+}
+
+div.content .watch-episode .about-episode h5 {
+  margin: 7px 0px;
+  font-weight: normal;
+}
+
+div.content .watch-episode .about-episode p {
+  font-size: 12px;
+}
+
+div.content .watch-episode .about-episode .buttons {
+  margin-top: 10px;
+  line-height: 50px;
+}
+
+div.content .watch-episode .about-episode .buttons button {
+  display: inline-block;
+  margin: 5px 0px;
+  background: linear-gradient(to top, #2f2d2d, #676565);
+  color: #fdc314;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 180px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  box-shadow: 0px 1px 3px #2f2d2d;
+  line-height: 40px;
+}
+
+div.content .watch-episode .about-episode .buttons button img {
+  height: 20px;
+  margin-bottom: -5px;
+  margin-right: 0px;
+}
+
+div.content .watch-episode .about-episode .buttons button img.add {
+  margin-right: 3px;
+}
+
+div.content .watch-episode .about-episode .buttons button:first-child span {
+  vertical-align: -3px;
+  font-size: 26px;
+}
+
+div.content .watch-episode .about-episode .buttons button:nth-child(2) span {
+  vertical-align: 1px;
+}
+
+div.content .catalogue {
+  height: 300px;
+  background: #ffffff;
+}
+
+div.content .catalogue .random-episode {
+  background: linear-gradient(to top, #fefcea, #cacaca);
+  padding: 20px 100px;
+}
+
+div.content .catalogue .random-episode img.random {
+  border-radius: 10px;
+}

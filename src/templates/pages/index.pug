@@ -6,4 +6,42 @@ block vars
 block content
 	include ../sub-nav.pug
 
-	p i'm content full-episodes
+	.content
+
+		.watch-episode
+
+
+			img.episode(src="images/bearmanpig.jpg")
+
+			.about-episode
+
+				.social
+					img(src="images/fb.png")
+					img(src="images/twitter.png")
+					img(src="images/mail.png")
+					img(src="images/google-plus.png")
+
+				h1 ManBearPig
+				h5 Original Air Date: April 26, 2006
+				p.
+					The boys are trapped in a cave and Cartman finds treasure.
+
+				.buttons
+					button #[img(src="images/play.png")] #[span Watch]
+					button #[img.add(src="images/add.png")] #[span Add to...]
+					button View Wiki
+
+		.catalogue
+
+			.random-episode
+				img.random(src="images/random.png")
+
+			.sort-by-season
+
+				h3 Sort by season
+					- var i =1;
+					h5 Featured
+						while i <= 20
+							span= i++
+
+			.season
